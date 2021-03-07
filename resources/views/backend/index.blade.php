@@ -7,20 +7,26 @@
     <!-- Info boxes -->
     <div class="row">
       <div class="col-md-4 col-sm-6 col-xs-12">
+        @php
+          $division=DB::Table('divisions')->count('id');
+        @endphp
         <div class="info-box">
-          <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+          <span class="info-box-icon bg-aqua"><i class="fa fa-tags"></i></span>
           <div class="info-box-content">
-            <span class="info-box-text">Total Division Inserted</span>
-            <span class="info-box-number">90<small>%</small></span>
+            <span class="info-box-text">Total Division</span>
+            <span class="info-box-number">{{$division}}</span>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12">
+        @php
+          $district=DB::Table('districts')->count('id');
+        @endphp
         <div class="info-box">
-          <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+          <span class="info-box-icon bg-red"><i class="fa fa-university"></i></span>
           <div class="info-box-content">
-            <span class="info-box-text">Total District Inserted</span>
-            <span class="info-box-number">41,410</span>
+            <span class="info-box-text">Total District</span>
+            <span class="info-box-number">{{$district}}</span>
           </div>
         </div>
       </div>
@@ -29,29 +35,38 @@
       <div class="clearfix visible-sm-block"></div>
 
       <div class="col-md-4 col-sm-6 col-xs-12">
+        @php
+          $upazila=DB::Table('upazilas')->count('id');
+        @endphp
         <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+          <span class="info-box-icon bg-green"><i class="fa fa-building"></i></span>
           <div class="info-box-content">
-            <span class="info-box-text">Total Upazila Inserted</span>
-            <span class="info-box-number">760</span>
+            <span class="info-box-text">Total Upazila</span>
+            <span class="info-box-number">{{$upazila}}</span>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12">
+        @php
+          $union=DB::Table('unions')->count('id');
+        @endphp
         <div class="info-box">
-          <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+          <span class="info-box-icon bg-yellow"><i class="fa fa-area-chart"></i></span>
           <div class="info-box-content">
-            <span class="info-box-text">Total Union Inserted</span>
-            <span class="info-box-number">2,000</span>
+            <span class="info-box-text">Total Union</span>
+            <span class="info-box-number">{{$union}}</span>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12">
+        @php
+          $village=DB::Table('villages')->count('id');
+        @endphp
         <div class="info-box">
-          <span class="info-box-icon bg-secondary"><i class="ion ion-ios-people-outline"></i></span>
+          <span class="info-box-icon bg-secondary"><i class="fa fa-map-marker"></i></span>
           <div class="info-box-content">
-            <span class="info-box-text">Total Village Inserted</span>
-            <span class="info-box-number">2,000</span>
+            <span class="info-box-text">Total Village</span>
+            <span class="info-box-number">{{$village}}</span>
           </div>
         </div>
       </div>
