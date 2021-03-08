@@ -29,7 +29,7 @@
                                         </h3>
                                     </div>
                                     <div class="card-body">
-                                        <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
+                                        <table id="example1" class="table table-striped table-bordered">
                                             <thead>
                                                 <tr>
                                                   <th>SL.</th>
